@@ -2,7 +2,7 @@
 
 int main(){
 
-    std::cout << "Starting with C++.";
+    std::cout << "Starting out with C++.";
 
     std::cin.get();
     
