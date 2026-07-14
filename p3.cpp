@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 int main(){
     //Calculating the circumference of a circle by taking input.
@@ -15,6 +16,10 @@ int main(){
         double circumference = 2 * pi * r;
 
         std::cout << "The circumference of the circle is: " << circumference << " " << unit;
+
+        std::cout << "\n Press Enter to exit...";
+        std::cin.ignore();
+        std::cin.get();
     
     return 0;
 }
