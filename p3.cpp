@@ -4,7 +4,7 @@
 int main(){
     //Calculating the circumference of a circle by taking input.
 
-        double pi = 3.14;
+        const double PI = 3.14;
         double r;
         
 
@@ -13,7 +13,7 @@ int main(){
         std::cout << "Enter the radius (in cm) of the circle: " << '\n';
         std::cin >> r;
 
-        double circumference = 2 * pi * r;
+        double circumference = 2 * PI * r;
 
         std::cout << "The circumference of the circle is: " << circumference << " " << unit;
 
