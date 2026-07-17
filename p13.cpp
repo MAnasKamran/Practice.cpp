@@ -22,6 +22,9 @@ int main() {
         std::cout << "\n********************************************\n";
         std::cin >> choice;
 
+        std::cin.clear();
+        fflush(stdin);
+
         switch(choice){
         case 1:
         showBalance(balance);
