@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 
 void showBalance(double balance);
@@ -44,14 +45,18 @@ int main() {
     }
     } while(choice != 4);
 
+     std::cin.clear(); 
+      while (std::cin.get() != '\n'); 
+    std::cin.clear();
     std::cin.ignore(1000, '\n');
+    std::cout << "\nProgram finished. Press Enter key again to close this window...";
     std::cin.get();
 
     return 0;
 }
 
 void showBalance(double balance) {
-        std::cout << "The current Balance is: $" << balance << '\n';
+        std::cout << "The current Balance is: $" << std::setprecision(2) << std::fixed << balance << '\n';
         std::cout << "                          \n";
     }
 
