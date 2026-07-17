@@ -18,7 +18,7 @@ int main(){
         std::cout << element << " ";
     }
 
-    std::cout << "\nArray sorted in descending order: \n";
+    std::cout << "\n\nArray sorted in descending order: \n";
 
     sortArrayInDescendingOrder(numbers, size);
 
