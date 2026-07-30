@@ -14,6 +14,7 @@ int main(){
     char player = 'X';
     char computer = 'O';
     bool running = true;
+    srand(time(NULL));
 
     drawBoard(spaces);
 
@@ -65,7 +66,6 @@ void playerMove(char *spaces, char player){
 }
 void computerMove(char *spaces, char computer){
     int number;
-    srand(time(NULL));
 
     while(true){
         number = rand() % 9;
