@@ -36,7 +36,12 @@ int main(){
         break;
         }
     }
-    std::cout << "Thanks for playing.";
+    std::cout << "Thanks for playing.\n";
+
+    std::cout << "Press Enter to exit...";
+    std::cin.clear(); // Clear any error flags from input
+    std::cin.ignore(10000, '\n'); // Discard leftover characters
+    std::cin.get(); // Wait for user to press Enter
     return 0;
 }
 
