@@ -9,7 +9,7 @@ int main(){
     *pNum = 22;
 
     std::cout << "Address: " << pNum << '\n';
-    std::cout << "Address: " << *pNum << '\n';
+    std::cout << "Value: " << *pNum << '\n';
 
     delete pNum;//To avoid memory leak
     
