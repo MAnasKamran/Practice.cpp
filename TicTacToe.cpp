@@ -20,17 +20,17 @@ int main(){
 
     while(running){
         playerMove(spaces, player);
+        drawBoard(spaces);
         if(checkWinner(spaces, player, computer)){
             running = false;
         break;
         }
-        drawBoard(spaces);
         computerMove(spaces, computer);
+        drawBoard(spaces);
         if(checkWinner(spaces, player, computer)){
             running =  false;
         break;
         }
-        drawBoard(spaces);
         if(checkTie(spaces)){
             running =  false;
         break;
