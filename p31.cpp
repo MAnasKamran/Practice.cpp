@@ -18,7 +18,7 @@ class Student{
     }
 };
 int main(){
-    Student student1("John Doe", 22,3.77);
+    Student student1("John Doe", 22, 3.77);
     student1.printDetails();
 
     Student student2("Alice", 21, 3.68);
