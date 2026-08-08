@@ -4,7 +4,7 @@ using namespace std;
 
 //using loop:
 
-int checkPowOfTwo(int n){
+bool checkPowOfTwo(int n){
     if(n <= 1){
         return false;
     }
